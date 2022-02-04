@@ -1,0 +1,26 @@
+[Unit]
+Description=nuovocoin's distributed currency daemon
+After=network.target
+
+[Service]
+User=nuovocoin
+Group=nuovocoin
+
+Type=forking
+PIDFile=/var/lib/nuovocoind/nuovocoind.pid
+
+ExecStart=/usr/bin/nuovocoind -daemon -pid=/var/lib/nuovocoind/nuovocoind.pid \
+          -conf=/etc/nuovocoin/nuovocoin.conf -datadir=/var/lib/nuovocoind
+
+ExecStop=-/usr/bin/nuovocoin-cli -conf=/etc/nuovocoin/nuovocoin.conf \
+         -datadir=/var/lib/nuovocoind stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

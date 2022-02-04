@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=nuovocoin
+Comment=nuovocoin P2P Cryptocurrency
+Comment[fr]=nuovocoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=nuovocoin, eşten eşe kriptografik sanal para birimi
+Exec=nuovocoin-qt %u
+Terminal=false
+Type=Application
+Icon=nuovocoin128
+MimeType=x-scheme-handler/nuovocoin;
+Categories=Office;Finance;

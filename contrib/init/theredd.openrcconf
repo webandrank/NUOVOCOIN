@@ -1,0 +1,26 @@
+# /etc/conf.d/nuovocoind: config file for /etc/init.d/nuovocoind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/nuovocoin/nuovocoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/nuovocoind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/nuovocoind.pid"
+
+# Where to write nuovocoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/nuovocoind"
+
+# User and group to own nuovocoind process
+#BITCOIND_USER="nuovocoin"
+#BITCOIND_GROUP="nuovocoin"
+
+# Path to nuovocoind executable
+#BITCOIND_BIN="/usr/bin/nuovocoind"
+
+# Nice value to run nuovocoind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
