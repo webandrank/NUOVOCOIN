@@ -10,7 +10,7 @@ nuovocoin is a cutting edge cryptocurrency, with many features not available in 
   technology used to secure the network and provide the above features, each Masternode is secured
   with collateral of 25K nuovocoin
 
-More information at [nuovocoin.io](http://www.nuovocoin.io)
+More information at [nuovocoin.com](http://www.nuovocoin.com)
 
 ### Coin Specs
 <table>
